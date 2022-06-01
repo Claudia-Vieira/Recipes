@@ -1,0 +1,45 @@
+<div class="container">
+
+<h1 class="title">{{recipe?.title}}</h1>
+
+<div class="row">
+    <div class="col-6">
+        <img src={{recipe?.imageUrl}} alt={{recipe?.title}}>
+    </div>
+    <div class="col-6" id="basicCharacteristics">
+        <div class="row characteristicBox">
+            <p class="characteristic">Duração <fa-icon [icon]="faClock"></fa-icon> - <strong>{{recipe?.duration}}min</strong></p>
+        </div>
+        <div class="row characteristicBox mt-5">
+            <p class="characteristic">Dificuldade <fa-icon [icon]="faTachometerAlt"></fa-icon> - <strong>{{recipe?.dificulty}}</strong> </p>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <h2 style="margin:auto">Ingredientes</h2>
+</div>
+<div class="row mt-5">
+    <ul>
+        <li *ngFor="let ingredient of recipe?.ingredients">
+            {{ingredient.name}} - {{ingredient.quantity}}
+        </li>
+    </ul>
+</div>
+
+<div class="row mt-5">
+    <h2 style="margin:auto">Preparação</h2>
+</div>
+<div class="row mt-3" *ngFor="let step of recipe?.steps" >
+    <div class="form-check"  >
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault" >
+            {{step.description}}
+        </label>
+      </div>
+</div>
+
+
+
+</div>
+

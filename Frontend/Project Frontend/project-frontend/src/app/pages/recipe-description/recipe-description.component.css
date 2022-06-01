@@ -1,0 +1,25 @@
+.title{
+  text-align: center;
+  margin:20px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.characteristicBox{
+  border: 1px solid;
+  border-style: inset;
+  padding:5px;
+  margin-top:auto;
+  margin-bottom: auto;
+}
+
+.characteristic{
+  margin-bottom: 0;
+}
+
+#basicCharacteristics{
+ padding-top:50px;
+}

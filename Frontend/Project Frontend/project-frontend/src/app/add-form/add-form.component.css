@@ -1,0 +1,10 @@
+label {
+    font-weight: bold;
+}
+p{
+    opacity: 0.9;
+}
+#formFileSm{
+    border:none;
+    padding-left: 0;
+}

@@ -1,0 +1,16 @@
+img{
+    width:50%;
+    height:50%;
+    margin:auto;
+}
+
+span{
+    color:black;
+}
+
+#carouselExampleSlidesOnly{
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+    box-shadow: 10px 5px 10px grey;}

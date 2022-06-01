@@ -1,0 +1,99 @@
+<div class="container mt-5">
+<h1>
+    Adicionar Receita
+</h1>
+<hr/>
+
+<h2 class="mb-3 mt-4">Dados base da Receita</h2>
+
+<form [formGroup]="recipeForm" (ngSubmit)="save()">
+    <div class="form-group">
+    <div class="col-6 p-0">
+      <label for="titleInput">Título</label>
+      <input type="text" class="form-control" id="titleInput" formControlName="title">
+    </div>
+    </div>
+    <div class="form-row mb-3">
+        <div class="col">
+          <label for="titleInput">Duração</label>
+          <input type="text" class="form-control" placeholder="Quantos minutos de preparação?" formControlName="duration">
+        </div>
+        <div class="col">
+            <label for="titleInput">Dificuldade</label>
+            <select class="form-control" data-val="true" formControlName="dificulty">  
+              <option value="Fácil">Fácil</option>  
+              <option value="Médio">Médio</option>  
+              <option value="Dificil">Dificil</option>  
+          </select> 
+        </div>
+      </div>
+
+      <!--Upload da Imagem - não implementado
+
+      <div class="form-row mb-3">
+        <div class="col ">
+            <label for="formFileSm" class="form-label">Selecione uma imagem</label>
+            <input class="form-control" id="formFileSm" type="file" #file accept=".png, .jpg, .jpeg" formControlName="imageUrl">
+          </div>
+      </div>-->
+
+      
+     <h2 class="mb-3 mt-5">Ingredientes</h2>
+
+
+     <div formArrayName="ingredients">
+      <div *ngFor="let ingredients of ingredients.controls; let i = index">
+
+        <div class="form-group"  >       
+            <input formGroupName="{{i}}"  placeholder="Ingrediente" class="mr-2 p-1" style="border-radius:5px">
+            <input formGroupName="{{i}}"  placeholder="Quantidade" class="ml-2 mr-4 p-1" style="border-radius:5px">
+          <button class="delete-btn btn btn-light btn-outline-dark" (click)="deleteIngredient(i)">Delete</button>
+        </div>
+
+      </div>
+
+          <button class="btn btn-light btn-outline-dark mt-3" (click)="addNewIngredient()">Adicionar</button>
+      </div>
+
+    <h2 class="mb-3 mt-5">Preparação</h2>
+
+
+      <div formArrayName="steps">
+        <div *ngFor="let steps of steps.controls; let i = index">
+  
+          <div class="form-group"  >       
+              <input formGroupName="{{i}}"  placeholder="Passo" class="mr-2 p-1" style="border-radius:5px">
+              
+            <button class="delete-btn btn btn-light btn-outline-dark" (click)="deleteStep(i)">Delete</button>
+          </div>
+  
+        </div>
+  
+            <button class="btn btn-light btn-outline-dark mt-3" (click)="addNewStep()">Adicionar</button>
+        </div>
+
+
+     <!--Submit-->
+
+     <hr/>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-2">
+      <button type="submit" class="btn btn-light btn-outline-dark mt-3">Guardar</button>
+     </div>
+     <div class="col-2">
+      <button class="btn btn-light btn-outline-dark mt-3" (click)="cancel()">Cancelar</button>
+     </div>
+     </div>
+     </div>
+
+
+
+    <!-- passos
+      
+      <div class="form-group">
+        <label for="stepsInput">Preparação</label>
+        <input type="text" class="form-control" id="stepsInput" placeholder="Insira os passos separados por /.">
+        <span>Ex. Misturar o leite e a farinha./Adicionar o açúcar e mexer bem./....</span>
+      </div>
+       -->

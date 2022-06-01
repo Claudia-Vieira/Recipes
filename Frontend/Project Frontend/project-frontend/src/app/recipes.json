@@ -1,0 +1,65 @@
+{
+    "recipes":[
+       {
+         "id":1,
+         "title": "Baba de Camelo",
+         "imageUrl": "/assets/baba-camelo.jpg",
+         "duration":30,
+         "dificulty":"Fácil",
+         "ingredients": [
+             {"id":1, "name":"leite condensado cozido", "quantity":"1 lata"},
+             {"id":2, "name": "ovos", "quantity":"5"},
+             {"id":3, "name": "amêndoa torrada", "quantity":"100g"}],
+         "steps": [
+             {"id":1, "description":"Comece por separar as gemas das claras."},
+             {"id":2, "description": "Numa tigela, deite o leite condensado cozido e as gemas e bata bem, até obter uma mistura homogénea."},
+             {"id":3, "description": "Noutro recipiente, bata as claras em castelo."},
+             {"id":4, "description": "Junte-as ao preparado anterior, envolvendo cuidadosamente."},
+             {"id":5, "description": "Leve a baba de camelo ao frio e sirva decorado com a amêndoa torrada laminada."}]
+       },
+       {
+         "id":2,
+         "title": "Leite Creme",
+         "imageUrl": "/assets/leite-creme.jpg",
+         "duration":15,
+         "dificulty":"Fácil",
+         "ingredients": [
+             {"id":1, "name":"farinha", "quantity":"30g"},
+             {"id":2, "name": "açúcar", "quantity":"200g"},
+             {"id":3, "name": "leite", "quantity":"1L"},
+             {"id":4, "name": "ovos", "quantity":"6"},
+             {"id":5, "name": "pau de canela", "quantity":"1 pau"},
+             {"id":6, "name": "limão", "quantity":"1"}],
+         "steps": [
+             {"id":1, "description":"Leve ao lume o leite com a canela e a casca de limão e deixe ferver. Elimine os sólidos e reserve."},
+             {"id":2, "description":"Envolva numa taça as gemas com o açúcar, a farinha e, de seguida, acrescente o leite. Passe para um tacho e leve ao lume até engrossar e formar um creme, sem parar de mexer."},
+             {"id":3, "description":"Distribua o creme por taças individuais e leve ao frigorífico até arrefecer."},
+             {"id":4, "description":"Antes de servir, polvilhe com o açúcar demerara e queime com um maçarico ou ferro próprio."}]
+       },
+       {
+         "id":16,
+         "title": "Bolo de Chocolate",
+         "imageUrl": "/assets/bolo-chocolate.jpg",
+         "duration":60,
+         "dificulty":"Fácil",
+         "ingredients": [
+             {"id":1, "name":"farinha", "quantity":"2 chávenas"},
+             {"id":2, "name": "açúcar", "quantity":"1 chávena"},
+             {"id":3, "name": "chocolate em pó", "quantity":"1 chávena"},
+             {"id":4, "name": "ovos", "quantity":"2"},
+             {"id":5, "name": "óleo", "quantity":"1/2 chávena"},
+             {"id":6, "name": "água", "quantity":"1 chávena"},
+             {"id":7, "name": "fermento", "quantity":"1 colher de sopa"},
+             {"id":8, "name": "margarina", "quantity":"1 colher de sopa"},
+             {"id":6, "name": "leite condensado", "quantity":"1 lata"},
+             {"id":7, "name": "leite", "quantity":"4 colheres de sopa"},
+             {"id":8, "name": "chocolate em pó", "quantity":"3 colheres de sopa"}],
+         "steps": [
+             {"id":1, "description":"Misture todos os ingredientes secos, depois o óleo, a água e os ovos, à exceção do fermento e bata tudo muito bem por cerca de 4min."},
+             {"id":2, "description":"Acrescente o fermento em pó e bata a massa durante mais 30 segundos."},
+             {"id":3, "description":"Verta o preparado para uma forma untada com manteiga e polvilhada com farinha, ou forrada com papel vegetal, e leve ao forno pré-aquecido a 180º durante 40 a 50 minutos."},
+             {"id":4, "description":"Para a cobertura, coloque o chocolate em pó com a margarina e o leite num tacho ao lume. Mexa sempre."},
+             {"id":5, "description":"Quando estiver quase a levantar fervura junte o leite condensado e mexa bem até obter uma mistura cremosa."},
+             {"id":6, "description":"Deve cobrir o bolo, semi-arrefecido, com esta cobertura ainda quente - para que possa penetrar ligeiramente na massa."}]
+       }]
+   }
